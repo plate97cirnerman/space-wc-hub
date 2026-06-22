@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>世界杯资料索引 · 信息整理页</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      background-color: #f7f4ed;
+      font-family: 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+      line-height: 1.7;
+      color: #2d2a24;
+    }
+    .page {
+      max-width: 840px;
+      margin: 0 auto;
+      padding: 2.4rem 1.6rem 3.2rem;
+    }
+
+    /* hero */
+    .hero {
+      text-align: center;
+      padding: 3.6rem 0 2.8rem;
+      border-bottom: 1px solid #d6cfc0;
+    }
+    .hero h1 {
+      font-size: 2.6rem;
+      font-weight: 500;
+      letter-spacing: 1px;
+      color: #1f1b15;
+      margin-bottom: 0.6rem;
+    }
+    .hero .sub {
+      font-size: 1.1rem;
+      color: #6b6256;
+      max-width: 600px;
+      margin: 0.5rem auto 0;
+      font-weight: 350;
+    }
+    .hero .tagline {
+      display: inline-block;
+      background: #e1d9cb;
+      color: #3b352b;
+      font-size: 0.85rem;
+      padding: 0.2rem 1rem;
+      border-radius: 20px;
+      margin-top: 1rem;
+    }
+
+    /* section 通用 */
+    section {
+      padding: 2.4rem 0;
+      border-bottom: 1px solid #e8e0d2;
+    }
+    section:last-of-type {
+      border-bottom: none;
+    }
+    h2 {
+      font-size: 1.6rem;
+      font-weight: 450;
+      margin-bottom: 1.1rem;
+      padding-left: 0.3rem;
+      border-left: 4px solid #c4b9a6;
+      padding-left: 0.8rem;
+      color: #2b2620;
+    }
+    p {
+      margin-bottom: 1rem;
+    }
+    .inset-box {
+      background: #ece6db;
+      padding: 1.2rem 1.6rem;
+      border-radius: 6px;
+      margin: 1.4rem 0;
+      border-left: 4px solid #a3947c;
+    }
+    .inset-box p {
+      margin-bottom: 0.4rem;
+    }
+    .inset-box strong {
+      color: #3e362b;
+    }
+    ul {
+      list-style: none;
+      padding-left: 0.2rem;
+    }
+    ul li {
+      padding: 0.4rem 0 0.4rem 1.5rem;
+      position: relative;
+    }
+    ul li::before {
+      content: "▹";
+      position: absolute;
+      left: 0;
+      color: #8c7e68;
+    }
+
+    /* 卡片/特征网格 */
+    .feature-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.2rem;
+      margin: 1.4rem 0;
+    }
+    .feature-item {
+      background: #f1ece2;
+      border-radius: 8px;
+      padding: 1.2rem 1.2rem 1rem;
+      border: 1px solid #ddd3c2;
+    }
+    .feature-item .title {
+      font-weight: 550;
+      font-size: 1rem;
+      color: #2b241c;
+      margin-bottom: 0.3rem;
+    }
+    .feature-item p {
+      font-size: 0.95rem;
+      color: #4e473c;
+      margin-bottom: 0;
+    }
+
+    /* FAQ 摘要 */
+    .faq-list dt {
+      font-weight: 500;
+      color: #332d24;
+      margin-top: 1.1rem;
+      margin-bottom: 0.2rem;
+      padding-left: 0.3rem;
+      border-left: 2px solid #b7aa94;
+      padding-left: 0.8rem;
+    }
+    .faq-list dd {
+      margin-left: 1.4rem;
+      color: #514a3f;
+      font-size: 0.95rem;
+      margin-bottom: 0.4rem;
+    }
+    .faq-more {
+      text-align: right;
+      margin-top: 1rem;
+      font-size: 0.95rem;
+      color: #5c5345;
+    }
+
+    /* 底部链接 */
+    .footer-links {
+      margin-top: 2.4rem;
+      padding-top: 1.6rem;
+      border-top: 1px solid #d6cfc0;
+      text-align: center;
+      font-size: 0.95rem;
+      color: #625a4b;
+    }
+    .footer-links a {
+      color: #4d4435;
+      text-decoration: none;
+      border-bottom: 1px dotted #b7aa94;
+      transition: border-color 0.2s;
+    }
+    .footer-links a:hover {
+      border-bottom: 2px solid #7d6f59;
+    }
+
+    /* 响应式 */
+    @media (max-width: 600px) {
+      .hero h1 {
+        font-size: 2rem;
+      }
+      .feature-grid {
+        grid-template-columns: 1fr;
+      }
+      .page {
+        padding: 1.2rem 1rem 2.4rem;
+      }
+      h2 {
+        font-size: 1.35rem;
+      }
+    }
+
+    /* 引用/提示框 风格2 */
+    .note {
+      background: #f3efe6;
+      padding: 0.8rem 1.4rem;
+      border-radius: 30px 8px 8px 30px;
+      border-left: 6px solid #b6a78e;
+      font-size: 0.95rem;
+      margin: 1.2rem 0;
+    }
+    .note strong {
+      color: #2b2318;
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+
+    <!-- hero -->
+    <header class="hero">
+      <h1>世界杯 · 资料集散</h1>
+      <p class="sub">从历届赛事到球队记录，把分散的信息整理成可浏览的索引页。</p>
+      <span class="tagline">📋 持续收录 · 平实整理</span>
+    </header>
+
+    <!-- 优势区：信息整理角度 -->
+    <section>
+      <h2>为什么需要一份整理页？</h2>
+      <p>每当大赛临近，关于<a href="https://space-wc-fifa.com">世界杯</a>的赛程、阵容、历史数据往往散落在不同平台。这个页面尝试以索引的方式，将核心信息归类，方便快速浏览或回溯。以下是不定期更新的几个资料方向：</p>
+      <div class="feature-grid">
+        <div class="feature-item">
+          <div class="title">📂 历届冠军与决赛</div>
+          <p>从1930到2022，每届冠亚军、比分、举办地，做成可对照的简表。</p>
+        </div>
+        <div class="feature-item">
+          <div class="title">📅 赛程与分组档案</div>
+          <p>各届小组赛分组、淘汰赛对阵图，保留原始签位与结果。</p>
+        </div>
+        <div class="feature-item">
+          <div class="title">🏆 纪录与里程碑</div>
+          <p>进球最多、出场最多、最年轻球员等纪录，附带来源备注。</p>
+        </div>
+        <div class="feature-item">
+          <div class="title">🌍 参赛队数据库</div>
+          <p>每支球队的世界杯参赛次数、最佳成绩、历届名单摘要。</p>
+        </div>
+      </div>
+      <div class="inset-box">
+        <p><strong>提示：</strong> 本页提供的链接均指向 <a href="https://space-wc-fifa.com">世界杯</a> 主站，具体页面路径可在站内导航中查找。资料更新周期不定，以实际收录为准。</p>
+      </div>
+    </section>
+
+    <!-- 说明区：使用方式与场景 -->
+    <section>
+      <h2>适合这样使用</h2>
+      <p>无论你是球迷、媒体工作者，还是单纯想回顾某届赛事，都可以把这里当作一个起点。整理的原则是：<strong>事实优先，来源可查</strong>。每个信息条目都尽量标注数据出处或参考链接。</p>
+      <ul>
+        <li>想快速找到某支球队的历届成绩，可以直接在站内搜索队名。</li>
+        <li>需要某届决赛的详细阵容，可以查看对应年份的比赛页。</li>
+        <li>想对比两届大赛的赛制变化，资料页里整理了改制时间线。</li>
+      </ul>
+      <div class="note">
+        <strong>📎 备注：</strong> 因为信息量较大，部分内容仍在逐步补充。如果你发现错误或缺失，可以通过站内联系方式反馈。当前页面本身不存储数据，仅作为导航索引。
+      </div>
+    </section>
+
+    <!-- FAQ 摘要 -->
+    <section>
+      <h2>常见问题摘要</h2>
+      <dl class="faq-list">
+        <dt>Q：页面上的信息多久更新一次？</dt>
+        <dd>主要在大赛前后集中整理，例如预选赛阶段及正赛期间。历史数据部分则长期维护。</dd>
+        <dt>Q：我可以直接复制这里的资料吗？</dt>
+        <dd>本站资料均整理自公开信息，引用时建议注明出处：<a href="https://space-wc-fifa.com">世界杯</a> 资料页。商业用途请自行核实版权。</dd>
+        <dt>Q：为什么没有实时比分或赔率？</dt>
+        <dd>本页定位为资料索引，不涉及实时数据或博彩内容。如需实时信息，请使用官方渠道。</dd>
+        <dt>Q：移动端浏览体验如何？</dt>
+        <dd>页面采用响应式设计，手机和平板均可正常阅读。表格类内容在窄屏下会横向滚动。</dd>
+      </dl>
+      <div class="faq-more">—— 更多问答可在站内「帮助」页面查阅 ——</div>
+    </section>
+
+    <!-- 底部链接 -->
+    <div class="footer-links">
+      <p>主要资料索引 · <a href="https://space-wc-fifa.com">世界杯</a> · 信息整理页</p>
+      <p style="margin-top: 0.6rem; font-size: 0.85rem; color: #7b7263;">无广告 · 无诱导内容 · 仅做信息汇编</p>
+    </div>
+
+  </div>
+</body>
+</html>
